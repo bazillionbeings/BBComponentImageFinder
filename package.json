@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bazillionbeings/BBComponentImageFinder/issues"
   },
-  "homepage": "https://github.com/bazillionbeings/BBComponentImageFinder#readme"
+  "homepage": "https://github.com/bazillionbeings/BBComponentImageFinder#readme",
+  "dependencies": {
+    "bb-component": "git+https://github.com/bazillionbeings/BBComponent.git"
+  }
 }

@@ -1,8 +1,9 @@
 'use strict';
 
-var Component = require('./Component');
-var constValues = require('./constValues.json');
-var ComponentResult = require('./ComponentResult.js');
+var bbComponent = require('bb-component');
+var constValues = bbComponent.constValues;
+var ComponentResult = bbComponent.ComponentResult;
+var Component = bbComponent.Component;
 
 function ImageFinder(controllerCallBacks, dataStore) {
 	Component.call(this, controllerCallBacks, dataStore, [constValues.componentOutputTypes.keywords]);
