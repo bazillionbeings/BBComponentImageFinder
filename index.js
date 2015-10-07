@@ -5,10 +5,6 @@ let bbComponent = require('bb-component'),
     ComponentResult = bbComponent.ComponentResult,
     Component = bbComponent.Component;
 
-ImageFinder.prototype.execute = function () {
-    this._controllerCallBacks.providerRequest(constValues.providerTypes.flickr);
-};
-
 class ImageFinder extends Component {
     constructor(controllerCallBacks) {
         super(controllerCallBacks, [constValues.componentOutputTypes.keywords]);
