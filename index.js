@@ -22,7 +22,8 @@ class ImageFinder extends Component {
                     this._controllerCallBacks.error(err);
                     return;
                 }
-                this._controllerCallBacks.finish(new ComponentResult(constValues.componentOutputTypes.imageURL, result.photos.photo[0].url_c));
+                this._controllerCallBacks.result(new ComponentResult(constValues.componentOutputTypes.imageURL, result.photos.photo[0].url_c));
+                this._controllerCallBacks.finish();
             });
         }
     }
