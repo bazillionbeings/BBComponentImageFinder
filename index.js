@@ -29,12 +29,12 @@ class ImageFinder extends Component {
 
     setProvider(flickrProvider) {
         this._flickrProvider = flickrProvider;
-        _executeIfReady();
+        this._executeIfReady();
     }
 
     dataInput(keywords) {
         this._keywords = keywords;
-        _executeIfReady();
+        this._executeIfReady();
     }
 
     execute() {
