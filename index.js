@@ -12,7 +12,7 @@ class ImageFinder extends Component {
 
     _executeIfReady() {
         if(this._flickrProvider && this._keywords) {
-            flickrProvider.photos.search({
+            this._flickrProvider.photos.search({
                 text: this._keywords[0],
                 page: 1,
                 per_page: 500,
